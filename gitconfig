@@ -1,0 +1,7 @@
+[alias]
+	b = branch
+	s = status
+	graph = log --graph --decorate --color
+	opps = commit --amend
+[push]
+	default = simple
