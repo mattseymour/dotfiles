@@ -10,16 +10,33 @@ fi
 
 # Load bash aliases
 if [ -f $HOME/.bash_aliases ]; then
-    source $HOME/.bash_aliases
+    . $HOME/.bash_aliases
 fi
 
 if [ -f $HOME/.bash_aliases_local ]; then
-    source $HOME/.bash_aliases_local
+    . $HOME/.bash_aliases_local
 fi
+
+# Load bash completion
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+# Load git completion
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 
 ###
 # Environment variables
 ###
+HISTSIZE=10000
+HISTTIMEFORMAT="%h %d %H:%M:%S "ory
+HISTCONTROL=ignoredups:ignorespace
+PROMPT_COMMAND='history -a'
+
+export GIT_PS1_SHOWDIRTYSTATE=1
 
 export WORKON_HOME=~/venv
 export DJANGO_SETTINGS_MODULE=settings.dev
