@@ -27,6 +27,8 @@ if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 
+# Load tmux by default
+if [ "$TMUX" = "" ]; then tmux; fi
 
 ###
 # Environment variables
@@ -49,6 +51,8 @@ export DJANGO_SETTINGS_MODULE=settings.dev
 if [ -f  /usr/local/bin/virtualenvwrapper.sh ]; then
     source  /usr/local/bin/virtualenvwrapper.sh
 fi
+
+
 
 
 ###
