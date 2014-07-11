@@ -5,3 +5,7 @@
 	opps = commit --amend
 [push]
 	default = simple
+[user]
+	name = Matt Seymour
+[core]
+	excludesfile = ~/.gitignore_global
