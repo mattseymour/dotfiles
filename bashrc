@@ -40,7 +40,7 @@ PROMPT_COMMAND='history -a'
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-export WORKON_HOME=~/venv
+export WORKON_HOME=$HOME/venv
 export DJANGO_SETTINGS_MODULE=settings.dev
 export AGENT_CONTROLLER=https://dev.actual-experience.com/hq
 export AGENT_REGISTRAR=https://dev-registration.actual-experience.com/hq
