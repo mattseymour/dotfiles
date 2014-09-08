@@ -1,2 +1,6 @@
-alias ll="ls -la"
+alias l="ls -al --color"
+alias ll="ls -la --color"
 alias openproject="subl --project project.sublime-project"
+alias vagrant_rebuild="vagrant destroy -f; vagrant up; vagrant ssh;"
+alias c="clear"
+alias test_install="python setup.py -p dev test_install"
