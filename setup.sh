@@ -1,9 +1,19 @@
 #!/bin/bash
 
-rm $HOME/.bashrc
-rm $HOME/.bash_aliases
+function setLink {
+    # Check if the file exists
+    if [ -e $1 ]; then
+        echo "Moving file to $1_old"
+        mv $1 $1_old
+    # Check if symlink
+    elif [ -h $1 ]; then
+        echo "Removing symlink $1"
+        rm $1
+    fi
+    ln -s $(pwd)/$2 $1
+}
 
-
-ln -s ./bashrc $HOME/.bashrc
-ln -s ./bash_aliases $HOME/.bash_aliases
-
+setLink $HOME/.bashrc bashrc
+setLink $HOME/.bash_aliases bash_aliases
+setLink $HOME/.gitconfig gitconfig
+setLink $HOME/.gitignore_global gitignore_global
