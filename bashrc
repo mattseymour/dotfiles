@@ -63,5 +63,6 @@ bk() {
 ###
 # Display
 ###
-
+# <user> @ <host> : <path> (<git branch> <git ministatus>)
+# <history num>| <time>
 export PS1="\[\033[0;32m\]\u@\h : \w\[\033[1;33m\]\$(__git_ps1)\n\[\033[1;35m\][\!|\t] $  \[\033[0;37m\]"
