@@ -3,6 +3,7 @@
 	s = status
 	graph = log --graph --decorate --color
 	opps = commit --amend
+	oneline = log --oneline --decorate --color
 [push]
 	default = simple
 [user]
