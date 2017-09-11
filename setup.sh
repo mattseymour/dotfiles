@@ -17,4 +17,7 @@ setLink $HOME/.zshrc zshrc
 setLink $HOME/.zsh_aliases aliases
 setLink $HOME/.gitconfig gitconfig
 setLink $HOME/.gitignore_global gitignore_global
-setLink #HOME/.tmux.conf tmux.conf
+setLink $HOME/.tmux.conf tmux.conf
+
+
+setLink $HOME/.tmuxinator tmuxinator
