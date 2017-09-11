@@ -1,5 +1,10 @@
 #!/bin/bash
 
+sudo apt-get install tmuxinator zsh
+
+# install oh-my-zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 function setLink {
     # Check if the file exists
     if [ -e $1 ]; then
