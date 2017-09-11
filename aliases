@@ -10,3 +10,7 @@ alias onescreen="xrandr --output DFP1 --off"
 alias twoscreen="xrandr --output DFP1 --mode 1920x1200 --left-of DFP2"
 alias update="sudo apt-get update; sudo apt-get upgrade"
 alias in_history="history | grep"
+
+
+alias ff="grep -Hni"
+alias using-port="netstat -tulpn | grep --color "

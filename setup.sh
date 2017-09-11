@@ -13,7 +13,7 @@ function setLink {
     ln -s $(pwd)/$2 $1
 }
 
-setLink $HOME/.bashrc bashrc
-setLink $HOME/.bash_aliases bash_aliases
+setLink $HOME/.zshrc zshrc
+setLink $HOME/.zsh_aliases aliases
 setLink $HOME/.gitconfig gitconfig
 setLink $HOME/.gitignore_global gitignore_global
