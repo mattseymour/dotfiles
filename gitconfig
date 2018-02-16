@@ -4,6 +4,8 @@
 	graph = log --graph --decorate --color
 	opps = commit --amend
 	oneline = log --oneline --decorate --color
+	d = diff
+	ci = commit
 [push]
 	default = simple
 [user]
