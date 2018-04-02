@@ -41,7 +41,7 @@ export ARCHFLAGS="-arch x86_64"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # load virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 # secret variables
 source ~/.zsh_secrets
