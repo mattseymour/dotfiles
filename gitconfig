@@ -6,9 +6,14 @@
 	oneline = log --oneline --decorate --color
 	d = diff
 	ci = commit
+	ci = commit
+	ci = commit --interactive
 [push]
 	default = simple
 [user]
 	name = Matt Seymour
+	email = mattaseymour@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
+[diff "ansible-vault"]
+	textconv = ansible-vault view
