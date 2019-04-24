@@ -57,3 +57,9 @@ export NVM_DIR="$HOME/.nvm"
 if command -v tmux>/dev/null; then
   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
 fi
+
+
+export EDITOR=vim
+export PATH="$(pyenv root)/shims:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
