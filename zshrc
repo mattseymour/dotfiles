@@ -1,5 +1,6 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
+export VIRTUALENVWRAPP_PYTHON=/usr/bin/python3
+export PIP_USER='true'
 # Path to your oh-my-zsh installation.
 export ZSH=/home/matt/.oh-my-zsh
 
